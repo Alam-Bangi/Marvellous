@@ -1,15 +1,7 @@
-# Prerequisites
-*.d
 
 # Compiled Object files
 *.slo
-*.lo
-*.o
-*.obj
 
-# Precompiled Headers
-*.gch
-*.pch
 
 # Linker files
 *.ilk
@@ -17,30 +9,14 @@
 # Debugger Files
 *.pdb
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
 # Fortran module files
 *.mod
 *.smod
 
 # Compiled Static libraries
 *.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
 
 # Build directories
-build/
 Build/
 build-*/
 
@@ -54,7 +30,6 @@ compile_commands.json
 
 # Temporary files
 *.tmp
-*.log
 *.bak
 *.swp
 
@@ -67,3 +42,74 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# =========================================================================
+# 1. JetBrains IntelliJ IDEA
+# =========================================================================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# =========================================================================
+# 2. C and C++ (Compilers, Objects, and Binaries)
+# =========================================================================
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.o
+*.obj
+*.ko
+*.gch
+*.pch
+
+# Libraries and Archives
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared Libraries / DLLs
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# IDE / Build systems for C/C++
+cmake-build-debug/
+cmake-build-release/
+.clang-format
+.clangd/
+
+# =========================================================================
+# 3. Java (Build Tools and Artifacts)
+# =========================================================================
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package Files (if you build jars/wars manually)
+*.jar
+*.war
+*.ear
+*.nar
+
+# Build tool directories (Maven & Gradle)
+target/
+.gradle/
+build/
+
+# =========================================================================
+# 4. Operating System Files
+# =========================================================================
+.DS_Store
+Thumbs.db
