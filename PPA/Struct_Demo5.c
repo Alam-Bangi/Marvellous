@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+#pragma pack(1)
+struct Demo{
+    int i = 11; // Error
+    char ch = 'A'; // Error
+    float f = 90.99f; // Error
+};
+
+int main() {
+    struct Demo dobj1;
+    struct Demo dobj2;
+
+    struct Demo *dp = NULL;
+    dp = &dobj2;
+
+//    Direct Accessing Operator
+    dobj1.i = 11;
+    dobj1.ch = 'A';
+    dobj1.f = 90.99f;
+
+//    Indirect Accessing Operator
+    dp -> i = 21;
+    dp -> ch = 'B';
+    dp -> f = 91.99; // writing f is not mandatory
+
+    printf("%d\n", dobj1.i);
+    printf("%d\n", dp->i);
+
+
+    return 0;
+}
+/*
+alam@LAPTOP-V9FN0GP1:~/Github/Marvellous/PPA$ gcc Struct_Demo5.c -o Myexe -w
+alam@LAPTOP-V9FN0GP1:~/Github/Marvellous/PPA$ ./Myexe
+*/
