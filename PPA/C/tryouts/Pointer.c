@@ -12,5 +12,5 @@ int main() {
 /*
 alam@LAPTOP-V9FN0GP1:~/Github/Marvellous/PPA$ gcc Pointer.c -o Myexe -w
 alam@LAPTOP-V9FN0GP1:~/Github/Marvellous/PPA$ ./Myexe
-ERROR
+11
 */

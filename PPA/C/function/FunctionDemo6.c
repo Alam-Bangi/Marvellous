@@ -3,7 +3,6 @@
 int Addition(int no1, int no2) {
     int result = 0;
     result = no1 + no2;     // Business Logic
-
     return result;
 }
 
