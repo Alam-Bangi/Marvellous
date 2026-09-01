@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+
+class Arithmatic {
+    public:
+        int no1;
+        int no2;
+
+        Arithmatic() {
+            no1 = 0;
+            no2 = 0;
+        }
+
+        Arithmatic(int i, int j) {
+            no1 = i;
+            no2 = j;
+        }
+
+        int Addition() {
+            int ans  = 0;
+            ans = no1 + no2;
+            return ans;
+        }
+};
+
+int main() {
+    Arithmatic aobj1;
+//    aobj1.no1 = 12;
+//    aobj1.no2 = 28;
+
+    int result = 0;
+    result = aobj1.Addition();
+    cout << "Addition is: " << result << "\n";
+
+    return 0;
+}
+
+/*
+alam@LAPTOP-V9FN0GP1:~/Github/Marvellous/PPA/C++$ g++ OopXtry.cpp -o Myexe
+alam@LAPTOP-V9FN0GP1:~/Github/Marvellous/PPA/C++$ ./Myexe
+Addition is : 0
+*/
