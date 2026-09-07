@@ -6,7 +6,7 @@ class Selection1 {
 
         int no = 0;
 
-        System.out.println("Enter number: ");
+        System.out.print("Enter number: ");
         no = sc.nextInt();
 
         if(no % 2 == 0) {
