@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+class Arithmatic {
+    public:
+        int x,y;
+
+        Arithmatic(int i = 0, int j = 0) {
+            x = i;
+            y = j;
+        }
+};
+
+int main() {
+    Arithmatic aobj1;
+    Arithmatic aobj2(12);
+    Arithmatic aobj3(12,28);
+
+    return 0;
+}
