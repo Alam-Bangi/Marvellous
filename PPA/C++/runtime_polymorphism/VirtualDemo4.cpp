@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+
+#pragma pack(1)
+class Base {
+    public:
+        int i,j;
+        void fun() {
+            cout << "Base fun\n";
+        }
+        void gun() {
+            cout << "Base gun\n";
+        }
+        virtual void sun() {
+            cout << "Base sun\n";
+        }
+        virtual void run() {
+            cout << "Base run\n";
+        }
+}; // 16 bytes
+
+#pragma pack(1)
+class Derived : public Base {
+    public :
+        int x;
+        void fun() {
+            cout << "Derived fun\n";
+        }
+        void sun() {
+            cout << "Derived sun\n";
+        }
+        virtual void mun() {
+            cout << "Derived mun\n";
+        }
+        void bun() {
+            cout << "Derived bun\n";
+        }
+}; // 20 bytes
+
+int main() {
+    Base *bp = new Derived();
+
+    bp -> fun();
+    bp -> gun();
+    bp -> sun();
+    bp -> run();
+    bp -> mun(); // Error
+    bp -> bun(); // Error
+
+    return 0;
+}
+
+/*
+VirtualDemo4.cpp: In function 'int main()':
+VirtualDemo4.cpp:47:11: error: 'class Base' has no member named 'mun'; did you mean 'fun'?
+     bp -> mun();
+           ^~~
+VirtualDemo4.cpp:48:11: error: 'class Base' has no member named 'bun'; did you mean 'fun'?
+     bp -> bun();
+           ^~~
+*/
