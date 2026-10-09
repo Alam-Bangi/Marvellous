@@ -24,7 +24,7 @@ class Arithmatic {
 }
 class OOPXX {
     public static void main(String[] args) {
-        public int result = 0;
+        int result = 0;
 
         Arithmatic aobj1 = new Arithmatic(28,12);
 

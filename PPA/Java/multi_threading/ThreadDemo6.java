@@ -8,7 +8,7 @@ class ThreadDemo6 {
         Demoooo demo2 = new Demoooo();
         demo.start();
         demo2.start();
-        
+
         demo.join();
         demo2.join();
 

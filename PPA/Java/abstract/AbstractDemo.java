@@ -1,4 +1,4 @@
-abstract class Base {
+abstract class Base1 {
     public int i,j;
 
     public int Addition(int no1, int no2) {
@@ -7,7 +7,7 @@ abstract class Base {
 
     public abstract int Substraction(int no1, int no2);
 }
-class Derived extends Base {
+class Derivedd extends Base1 {
     public int x;
 
     public int Substraction(int no1, int no2) {
@@ -20,7 +20,7 @@ class Derived extends Base {
 }
 class AbstractDemo{
     public static void main(String[] args) {
-        Derived dobj = new Derived();
+        Derivedd dobj = new Derivedd();
         int ret = 0;
 
         ret = dobj.Addition(12, 10);
