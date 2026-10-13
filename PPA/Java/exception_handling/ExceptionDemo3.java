@@ -1,6 +1,8 @@
+package PPA.Java.exception_handling;
+
 import java.util.Scanner;
 
-class ExceptionDemo1 {
+class ExceptionDemo3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,11 +12,11 @@ class ExceptionDemo1 {
         System.out.println("Enter number 2: ");
         no2 = sc.nextInt();
 
-        ans = Demo.division(no1, no2);
+        ans = Demo3.division(no1, no2);
         System.out.println("Division is: " + ans);
     }
 }
-class Demo {
+class Demo3 {
     public static int division(int no1, int no2) {
         return no1 / no2;
     }
