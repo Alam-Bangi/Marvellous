@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int sumDigits(int iNo) {
+    int iDigit = 0;
+    int iSum = 0;
+
+    if(iNo < 0) {
+        iNo = -iNo;
+    }
+    while(iNo != 0) {
+        iDigit = iNo % 10;
+        iSum += iDigit;
+        iNo = iNo / 10;
+    }
+    return iSum;
+}
+
+int main() {
+    int iValue = 0;
+    int iRet = 0;
+
+    printf("Enter number : ");
+    scanf("%d", &iValue);
+
+    iRet = sumDigits(iValue);
+    printf("Summation of digits : %d\n", iRet);
+
+    return EXIT_SUCCESS;
+}
+
+// Time Complexity : O(n/2)
