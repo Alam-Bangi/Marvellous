@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void display(int *ptr){
+    printf("%d\n", *ptr);
+
+    ptr++;
+    printf("%d\n", *ptr);
+
+    ptr++;
+    printf("%d\n", *ptr);
+
+    ptr++;
+    printf("%d\n", *ptr);
+}
+
+int main() {
+    int arr[5] = {10, 20, 30, 40, 50};
+
+    display(arr);
+
+    return EXIT_SUCCESS;
+}
+
+/*
+    alam@LAPTOP-V9FN0GP1:~/Github/Marvellous/LB$ ./a.out
+    10
+    20
+    30
+    40
+*/
