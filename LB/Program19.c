@@ -3,7 +3,7 @@
 #include<stdbool.h>
 
 bool checkEven(int no) {
-    if(no%2==0) {
+    if (no % 2 == 0) {
         return true;
     } else {
         return false;
@@ -18,10 +18,10 @@ int main() {
     scanf("%d", &no);
 
     bRet = checkEven(no);
-    if(bRet == true) {
-        printf("Even Number\n");
+    if (bRet == true) {
+        printf("Even Number \n");
     } else {
-        printf("Odd Number\n");
+        printf("Odd Number \n");
     }
 
     return EXIT_SUCCESS;

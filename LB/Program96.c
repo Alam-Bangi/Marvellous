@@ -8,6 +8,7 @@ int main() {
     printf("Size of double: %zu\n", sizeof(double));
     printf("Size of short int: %zu\n", sizeof(short int));
     printf("Size of long int: %zu\n", sizeof(long int));
+    printf("Size of long long: %zu\n", sizeof(long long));
     printf("Size of long double: %zu\n", sizeof(long double));
 
     return EXIT_SUCCESS;

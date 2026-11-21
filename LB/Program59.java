@@ -18,11 +18,10 @@ class Iteration6 {
         int iCnt = 0;
 //        Input Updater
         if(iNo <= 0) {
-            iNo = - iNo;
+            iNo = - iNo;        // Absolute number (0 or positive)
         }
         for(iCnt = 0; iCnt < iNo; iCnt++) {
             System.out.println("Logic Building");
         }
-
     }
 }

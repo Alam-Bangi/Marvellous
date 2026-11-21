@@ -3,10 +3,10 @@
 
 
 void checkEven(int no) {
-    if(no%2==0) {
-        printf("Even Number\n");
+    if (no % 2 == 0) {
+        printf("Even Number \n");
     } else {
-        printf("Odd Number\n");
+        printf("Odd Number \n");
     }
 }
 int main() {

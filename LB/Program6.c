@@ -17,7 +17,8 @@ Step 5: Test the program
         Accept first number as no1
         Accept second number as no2
         Create variable as ans  to store result
-        Perform addition and store into ans
+        Write function to perform addition which returns an integer and accepts 2 integers
+        Call addition function and store return value into ans
         Display result from ans
     END
 */

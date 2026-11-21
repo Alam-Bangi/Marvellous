@@ -15,7 +15,7 @@ public class Program38 {
         System.out.print("Enter second number: ");
         iValue2 = scanner.nextInt();
 
-        iResult = Arithmetic1.addition(ivalue1, iValue2);
+//        iResult = Arithmetic1.addition(ivalue1, iValue2);
         System.out.println("Addition is: " + iResult);
     }
 }
@@ -28,3 +28,8 @@ class Arithmetic1 {
         return iAns;
     }
 }
+/*
+\\wsl.localhost\Ubuntu-26.04\home\alam\Github\Marvellous\LB\Program38.java:18:30
+java: non-static method addition(int,int) cannot be referenced from a static context
+
+ */

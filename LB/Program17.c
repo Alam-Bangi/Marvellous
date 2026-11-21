@@ -7,10 +7,10 @@ int main() {
     printf("Enter number : \n");
     scanf("%d", &no);
 
-    if(no %2 == 0) {
-        printf("Number is even\n");
+    if (no % 2 == 0) {
+        printf("Number is even \n");
     } else {
-        printf("Number is odd\n");
+        printf("Number is odd \n");
     }
 
     return EXIT_SUCCESS;

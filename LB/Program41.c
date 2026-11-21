@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 void maximum(int iNo1, int iNo2) {
-    if(iNo1 > iNo2) {
+    if (iNo1 > iNo2) {
         printf("Maximum is %d\n",iNo1);
     } else {
         printf("Maximum is %d\n",iNo2);

@@ -32,9 +32,9 @@ Step 5: Test the program
 #include<stdio.h>
 
 int main() {
-    int i = 10, j = 11, k = 0;
-    k = i + j;                    // Business Logic
-    printf("Addition is: %d\n", k);
+    int no1 = 10, no2 = 11, sum = 0;
+    sum = no1 + no2;                    // Business Logic
+    printf("Addition is: %d\n", sum);
 
     return 0;
 }

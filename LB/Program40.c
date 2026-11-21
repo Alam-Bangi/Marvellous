@@ -12,10 +12,10 @@ int main() {
     scanf("%d", &iValue2);
 
     if(iValue1 > iValue2) {
-            printf("Maximum is %d\n",iValue1);
-        } else {
-            printf("Maximum is %d\n",iValue2);
-        }
+        printf("Maximum is %d\n",iValue1);
+    } else {
+        printf("Maximum is %d\n",iValue2);
+    }
 
     return EXIT_SUCCESS;
 }

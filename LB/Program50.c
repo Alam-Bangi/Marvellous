@@ -2,11 +2,11 @@
 #include<stdlib.h>
 
 int minimum(int iNo1, int iNo2, int iNo3, int iNo4) {
-    if((iNo1 < iNo2) && (iNo1 < iNo3) && (iNo1 < iNo4)) {
+    if ((iNo1 < iNo2) && (iNo1 < iNo3) && (iNo1 < iNo4)) {
         return iNo1;
-    } else if((iNo2 < iNo1) && (iNo2 < iNo3) && (iNo2 < iNo4)) {
+    } else if ((iNo2 < iNo1) && (iNo2 < iNo3) && (iNo2 < iNo4)) {
         return iNo2;
-    } else if((iNo3 < iNo1) && (iNo3 < iNo2) && (iNo3 < iNo4)) {
+    } else if ((iNo3 < iNo1) && (iNo3 < iNo2) && (iNo3 < iNo4)) {
         return iNo3;
     } else {
         return iNo4;
